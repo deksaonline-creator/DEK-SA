@@ -1,0 +1,16 @@
+{
+  "name": "Dek SA",
+  "short_name": "Dek SA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#09090b",
+  "description": "Dek SA Web Application",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192 512x512 any",
+      "type": "image/png"
+    }
+  ]
+}

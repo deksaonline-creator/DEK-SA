@@ -1,0 +1,20 @@
+# Self-hosted Omi stack:  docker compose -f docker-compose.omi.yml up -d --build
+services:
+  omi-signaling:
+    build: ./omi-server
+    restart: unless-stopped
+    ports:
+      - "5100:5100"
+
+  # TURN relay so video works across different networks / strict NAT.
+  # Set TURN_IP to your PC's public IP (or LAN IP for local testing).
+  coturn:
+    image: coturn/coturn:latest
+    restart: unless-stopped
+    network_mode: host
+    command: >
+      -n --lt-cred-mech --realm=omi.local
+      --user=omi:omipass
+      --external-ip=${TURN_IP:-127.0.0.1}
+      --min-port=49160 --max-port=49200
+      --no-tls --no-dtls --fingerprint

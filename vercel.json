@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/news",
+      "destination": "http://web.sa.ac.th/index.php/prachasamphanth/news"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

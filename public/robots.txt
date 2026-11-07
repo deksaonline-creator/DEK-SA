@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /sgs-admin
+Disallow: /admin
+
+Sitemap: https://dek-sa.online/sitemap.xml

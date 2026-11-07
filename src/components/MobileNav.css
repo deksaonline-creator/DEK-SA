@@ -1,0 +1,108 @@
+.mobile-nav-wrapper {
+  display: none;
+  position: fixed;
+  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0 1rem;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.mobile-nav {
+  display: flex;
+  background: rgba(24, 24, 27, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  pointer-events: auto;
+  max-width: 500px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.mobile-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 0.5rem 0;
+  color: #71717a;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 1rem;
+}
+
+.mobile-nav-item:active {
+  transform: scale(0.9);
+}
+
+.mobile-nav-item.active {
+  color: #ffffff;
+  background: rgba(66, 135, 245, 0.16);
+}
+
+.mobile-nav-item.active svg {
+  color: #4287f5;
+}
+
+/* Global mobile & iPad overrides */
+@media (max-width: 1024px) {
+  .mobile-nav-wrapper {
+    display: flex;
+  }
+  
+  .desktop-nav-links,
+  .desktop-nav-tabs {
+    display: none !important;
+  }
+
+  body {
+    padding-bottom: calc(90px + env(safe-area-inset-bottom, 0px)); /* space for floating nav */
+  }
+
+  /* Make header flex adjustments */
+  nav {
+    padding: 0.75rem 1rem !important;
+  }
+
+  /* Make hero text smaller */
+  h1 {
+    font-size: 2rem !important;
+  }
+  
+  h2 {
+    font-size: 1.5rem !important;
+  }
+
+  /* Eazy card responsive - grid for iPad/Mobile */
+  .eazy-card {
+    width: 100% !important;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-nav {
+    padding: 0.5rem;
+    gap: 0.25rem;
+  }
+  .mobile-nav-item span {
+    font-size: 0.6rem !important;
+  }
+}
+
+/* Dynamic hide class */
+body.hide-mobile-nav .mobile-nav-wrapper {
+  display: none !important;
+}
+
+body.hide-mobile-nav {
+  padding-bottom: 0 !important;
+}

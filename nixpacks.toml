@@ -1,0 +1,4 @@
+providers = ["node"]
+
+[phases.setup]
+aptPkgs = ["...", "unzip", "libnss3", "libatk-bridge2.0-0", "libx11-xcb1", "libxcb-dri3-0", "libxcomposite1", "libxcursor1", "libxdamage1", "libxi6", "libxtst6", "libcups2", "libxss1", "libxrandr2", "libasound2t64", "libpangocairo-1.0-0", "libatk1.0-0", "libgtk-3-0", "libgbm1"]

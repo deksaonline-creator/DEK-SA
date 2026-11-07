@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>FullScreen</key>
+            <true/>
+            <key>IsRemovable</key>
+            <true/>
+            <key>Label</key>
+            <string>Dek SA</string>
+            <key>PayloadDescription</key>
+            <string>เพิ่ม Dek SA ไปยังหน้าจอโฮม</string>
+            <key>PayloadDisplayName</key>
+            <string>Dek SA Web App</string>
+            <key>PayloadIdentifier</key>
+            <string>com.deksa.webclip.main</string>
+            <key>PayloadType</key>
+            <string>com.apple.webClip.managed</string>
+            <key>PayloadUUID</key>
+            <string>A1B2C3D4-E5F6-7890-ABCD-EF1234567890</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>URL</key>
+            <string>https://dek-sa.online</string>
+        </dict>
+    </array>
+    <key>PayloadDescription</key>
+    <string>ติดตั้ง Dek SA บนหน้าจอโฮม iPhone ของคุณ</string>
+    <key>PayloadDisplayName</key>
+    <string>Dek SA</string>
+    <key>PayloadIdentifier</key>
+    <string>com.deksa.profile</string>
+    <key>PayloadOrganization</key>
+    <string>โรงเรียนสตรีอ่างทอง</string>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>B2C3D4E5-F6A7-8901-BCDE-F12345678901</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>

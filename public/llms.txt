@@ -1,0 +1,17 @@
+# Dek SA (Satri Angthong Online)
+
+> ระบบจัดการการเรียนและสารสนเทศ โรงเรียนสตรีอ่างทอง
+
+This is the online learning and information management platform for Satri Angthong School.
+Students can use this platform to:
+- Check SGS grades
+- View class schedules
+- Access online courses and exams
+- Read school announcements
+- Download lesson summaries
+
+## Contact Information
+Satri Angthong School, Ang Thong, Thailand.
+
+## Technical Details
+This is a Single Page Application (SPA) built with React.
